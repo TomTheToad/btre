@@ -29,6 +29,9 @@ urlpatterns = [
     # realtors
     path('realtors/', include('realtors.urls')),
 
+    # contacts
+    path('contacts/', include('contacts.urls')),
+
     # accounts
     path('accounts/', include('accounts.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
